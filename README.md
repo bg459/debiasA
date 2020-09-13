@@ -24,3 +24,16 @@ because the function wishes to punish accurate prediction of race given income, 
 
 
 ## Usage
+
+The program requires the following files in its directory. I have included samples of the files in the repository. The names of these files can be anything, so long as their respect names are passed in on command line. Otherwise, this will be the default file locations. 
+
+- base_model.h5: This is the network structure of the original network. Future adversarial layers will be built atop this network.
+- processed_train.pkl: This is a pickle of the training dataset right before it goes into the original network for training. This way there are no discrepancies with data processing.
+- processed_test.pkl: This is a pickle of the test dataset right before used as testing. In theory this should be similar to the train in terms of dimension, data types, etc.
+
+The program, at run, also takes a set of hyperparameters at command line. It is run through a main Python shell, through which one can also find the exhaustive list of options to give the program.
+
+```
+python main.py -help
+```
+Here are some of the more important/relevant options to feed.
