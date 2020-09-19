@@ -37,3 +37,5 @@ The program, at run, also takes a set of hyperparameters at command line. It is 
 python main.py -help
 ```
 Here are some of the more important/relevant options to feed.
+
+## Sample Run and Expected Output
